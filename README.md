@@ -81,7 +81,7 @@ Interactive Visual Appeal:
 
 Use of gradients, shadows, and animations provides an engaging cosmic theme.
 
-<p>Usage Suggestions</p>
+<h3>Usage Suggestions</h3>
 Suitable for landing pages, interactive backgrounds, or creative portfolio sections.
 Developers can adjust the galaxy and star positions, sizes, and animations for a customized appearance.
 Replace the provided background images (url) with different textures for varied cosmic effects.
