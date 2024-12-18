@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galaxies</title>
+    <style>
+        /* General reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Cosmic universe background animation */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: starryBackground 60s linear infinite;
+        }
+
+        /* Moving stars */
+        .stars::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.pinimg.com/736x/e7/f0/a4/e7f0a449879d7ff43f7064e93baddf05.jpg') center center/cover no-repeat;
+            opacity: 0.3;
+        }
+
+        /* Twinkling stars animation */
+        .twinkle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .twinkle .star {
+            position: absolute;
+            border-radius: 50%;
+            background: white;
+            opacity: 0;
+            animation: twinkling 1.5s infinite;
+        }
+
+        /* Pentagon-shaped stars */
+        .twinkle .pentagon-star {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            opacity: 0;
+            animation: twinkling 1.5s infinite;
+        }
+
+        /* Generate stars dynamically in the .twinkle element */
+        .twinkle .star:nth-child(odd) {
+            animation-duration: 1.5s;
+        }
+
+        @keyframes twinkling {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes starryBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        @keyframes starsMoving {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(1000px);
+            }
+        }
+
+        /* Moving galaxies */
+        .galaxy1 {
+            position: absolute;
+            top: 75%;
+            left: 60%;
+            width: 140px;
+            height: 140px;
+            background: url('https://i.pinimg.com/736x/e7/f0/a4/e7f0a449879d7ff43f7064e93baddf05.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotateGalaxy 60s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes rotateGalaxy {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .galaxy2 {
+            position: absolute;
+            bottom: 60%;
+            right: 10%;
+            width: 200px;
+            height: 200px;
+            background: url('https://i.pinimg.com/736x/e7/f0/a4/e7f0a449879d7ff43f7064e93baddf05.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotateGalaxy 60s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes rotateGalaxy {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .galaxy3 {
+            position: absolute;
+            bottom: 60%;
+            left: 20%;
+            width: 150px;
+            height: 150px;
+            background: url('https://i.pinimg.com/736x/e7/f0/a4/e7f0a449879d7ff43f7064e93baddf05.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotateGalaxy 60s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes rotateGalaxy {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .galaxy4 {
+            position: absolute;
+            top: 60%;
+            right: 10%;
+            width: 150px;
+            height: 150px;
+            background: url('https://i.pinimg.com/736x/e7/f0/a4/e7f0a449879d7ff43f7064e93baddf05.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotateGalaxy 60s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes rotateGalaxy {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .galaxy5 {
+            position: absolute;
+            top: 55%;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+            background: url('https://i.pinimg.com/736x/e7/f0/a4/e7f0a449879d7ff43f7064e93baddf05.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotateGalaxy 60s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @keyframes rotateGalaxy {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Earth-like round text box */
+        .container {
+            padding: 30px 30px;
+            border-radius: 50%;
+            box-shadow: 0px 6px 12px rgb(152, 185, 212);
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+            z-index: 1;
+            width: 150px; /* Adjust width for a circular look */
+            height: 150px; /* Same as width for a perfect circle */
+            background: 
+            radial-gradient(circle at 20% 30%, #90EE90 20%, transparent 30%), /* Landmass 1 */
+                radial-gradient(circle at 60% 70%, #90EE90 15%, transparent 25%), /* Landmass 2 */
+                radial-gradient(circle at 40% 50%, #90EE90 10%, transparent 20%), /* Landmass 3 */
+                radial-gradient(circle at 80% 20%, #90EE90 10%, transparent 30%), /* Landmass 4 */
+                radial-gradient(circle at 50% 50%, #00BFFF 50%, #4682B4 100%); /* Ocean background */
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: rotateAnimation 60s linear infinite; /* Infinite rotation */
+        }
+
+        @keyframes rotateAnimation {
+            from {
+                transform: rotate(0deg); /* Start at 0 degrees */
+            }
+            to {
+                transform: rotate(360deg); /* Rotate to 360 degrees */
+            }
+        }
+
+   .container {
+                padding: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkle">
+        <!-- Dynamically generated twinkling stars -->
+        <div class="pentagon-star" style="top: 80%; left: 40%;"></div> 
+        <div class="pentagon-star" style="top: 80%; left: 80%;"></div>
+        <div class="pentagon-star" style="top: 50%; left: 70%;"></div>
+        <div class="pentagon-star" style="top: 40%; left: 90%;"></div>
+        <div class="pentagon-star" style="top: 90%; right: 80%;"></div>
+        <div class="pentagon-star" style="bottom: 80%; right: 90%;"></div>
+        <div class="pentagon-star" style="bottom: 50%; right: 80%;"></div>
+        <div class="pentagon-star" style="bottom: 40%; right: 90%;"></div>
+        <div class="pentagon-star" style="bottom: 80%; left: 80%;"></div>
+        <div class="pentagon-star" style="bottom: 80%; left: 50%;"></div>
+        <!-- More stars can be added here for more density -->
+    </div>
+    <div class="galaxy1"></div>
+    <div class="galaxy2"></div>
+    <div class="galaxy3"></div>
+    <div class="galaxy4"></div>
+    <div class="galaxy5"></div>
+    <div class="container"></div>
+</body>
+</html>
