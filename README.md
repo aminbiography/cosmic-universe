@@ -1,6 +1,10 @@
-This code is a creative HTML and CSS design that simulates a "cosmic universe" environment with interactive and animated elements like stars, galaxies, and an Earth-like container. Below is a detailed description for developers:
+Live URL:  https://aminbiography.github.io/cosmic-universe/
 
-HTML Structure
+
+
+#This code is a creative HTML and CSS design that simulates a "cosmic universe" environment with interactive and animated elements like stars, galaxies, and an Earth-like container. Below is a detailed description for developers:
+
+#HTML Structure
 HTML Boilerplate:
 
 Includes the <!DOCTYPE html> declaration for HTML5.
@@ -18,7 +22,9 @@ Rotating Earth-like Container (.container):
 
 A circular div that mimics an Earth-like appearance using layered radial gradients.
 It rotates continuously using CSS animations (rotateAnimation) and has a shadow for depth.
-CSS Description
+
+
+#CSS Description
 Global Styling:
 
 Resets margins and paddings for the body, h1, and p elements to ensure consistent rendering across browsers.
