@@ -2,10 +2,13 @@ Live URL:  https://aminbiography.github.io/cosmic-universe/
 
 
 
-#This code is a creative HTML and CSS design that simulates a "cosmic universe" environment with interactive and animated elements like stars, galaxies, and an Earth-like container. Below is a detailed description for developers:
+#<h1>This code is a creative HTML and CSS design that simulates a "cosmic universe" environment with interactive and animated elements like stars, galaxies, and an Earth-like container.
+<br>
+Below is a detailed description for developers:</h1>
 
-#HTML Structure
-HTML Boilerplate:
+# <h2>HTML Structure
+<br>
+HTML Boilerplate:</h2>
 
 Includes the <!DOCTYPE html> declaration for HTML5.
 Specifies the lang attribute as en for English.
@@ -24,8 +27,9 @@ A circular div that mimics an Earth-like appearance using layered radial gradien
 It rotates continuously using CSS animations (rotateAnimation) and has a shadow for depth.
 
 
-#CSS Description
-Global Styling:
+# <h2>CSS Description
+<br>
+Global Styling:</h2>
 
 Resets margins and paddings for the body, h1, and p elements to ensure consistent rendering across browsers.
 The body element is styled as a dark background (#0a0a0a) with white text, centered content using Flexbox, and hidden overflow.
@@ -76,7 +80,8 @@ Layered animations create depth and simulate a realistic universe.
 Interactive Visual Appeal:
 
 Use of gradients, shadows, and animations provides an engaging cosmic theme.
-Usage Suggestions
+
+<p>Usage Suggestions</p>
 Suitable for landing pages, interactive backgrounds, or creative portfolio sections.
 Developers can adjust the galaxy and star positions, sizes, and animations for a customized appearance.
 Replace the provided background images (url) with different textures for varied cosmic effects.
